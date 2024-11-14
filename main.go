@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/hello", func(w http.ResponseWriter, req *http.Request) {
-		msg := "Hello!"
+	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
+		msg := "Hello World!"
 		w.Write([]byte(msg))
 	})
 	http.HandleFunc("/echo", func(w http.ResponseWriter, req *http.Request) {
